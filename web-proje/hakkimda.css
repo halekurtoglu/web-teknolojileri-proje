@@ -1,0 +1,64 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+.container{
+    display: flex;
+    background-color:black;
+}
+.item{
+    padding: 40px;
+      
+}
+#item5{
+    margin-left: 750px;
+    
+}
+.container a{
+    color: white;
+    text-decoration: none;
+}
+.about{
+     display: flex;
+     padding:20px;
+}   
+img{
+    padding: 25px;
+    margin-top: 40px;
+    width:200x;
+    height:190px;
+} 
+.cizgi{
+    
+    background-color: rebeccapurple;
+    height: 15px;
+} 
+.aciklama{
+    text-align: center;
+    
+}
+.first{
+    
+    font-size: 30px;
+    margin-right: 15px;
+    
+} 
+.second{
+    
+    padding: 20px;
+    font-size: 18px;
+   
+}
+.third{
+    font-size: 18px;
+}
+   
+
+
+
+ 
+
+
+    
+    
