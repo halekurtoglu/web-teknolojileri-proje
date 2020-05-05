@@ -1,0 +1,95 @@
+<DOCTYPE html>
+  <html>
+
+  <head>
+    <title>iletisim</title>
+    <link rel="stylesheet" type="text/css" href="iletisim.css">
+
+    <script>
+      function dogrula() {
+        var degerad = document.myForm.ad.value;
+
+        if (degerad == "") {
+          window.alert("Ad kısmı boş bırakılamaz!");
+          return false;
+        }
+
+        var degersoyad = document.myForm.soyad.value;
+        if (degersoyad == "") {
+          window.alert("Soyad kısmı boş bırakılamaz!");
+          return false;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>KİŞİSEL BİLGİ FORMU<h3>
+
+        <form action="dogrula.php" onsubmit="return dogrula()" method="POST">
+
+
+          <div class="kisisel">
+            <fieldset>
+              <legend>KİŞİSEL BİLGİLER</legend>
+              <br> AD:<br><input type="text" name="ad"><br>
+              SOYAD:<br><input type="text" name="soyad" onsubmit="return dogrula()" method="post"><br><br>
+              DOĞUM TARİHİ :<br> <input type="date" name="dogumgünü" size="45"><br><br>
+              CİNSİYET :<br> <input type="radio" name="gender" value="kadın" checked> Kadın<br>
+              <input type="radio" name="gender" value="erkek"> Erkek<br><br>
+              EĞİTİM DÜZEYİ:<br> <input type="radio" name="egitim" value="ilkokul" checked> İlkokul<br>
+              <input type="radio" name="egitim" value="Ortaokul"> Ortaokul<br>
+              <input type="radio" name="egitim" value="lise"> Lise<br>
+              <input type="radio" name="egitim" value="Üniversite"> Üniversite<br><br>
+              BİLİNEN DİLLER :<br><input type="checkbox" name="dil" value="ing"> İngilizce<br>
+              <input type="checkbox" name="dil" value="alm"> Almanca <br>
+              <input type="checkbox" name="dil" value="rus">Rusca <br>
+              <input type="checkbox" name="dil" value="FRa"> Fransızca <br>
+              <input type="checkbox" name="dil" value="arap"> Arapca <br>
+
+              <br><br>
+            </fieldset>
+          </div>
+
+          <div class="iletisim">
+            <fieldset>
+              <legend>İLETİŞİM BİLGİLER</legend>
+              <br> <strong> TELEFON NO:<br></strong><input type="tel" name="phone" maxlength="10" required><br>
+              <br><strong>E-mail:<br>
+                <input type="email" name="email"><br><br>
+
+                ÜLKE:<br><br> <select name="ülke">
+                  <option value="Türkiye" selected>Türkiye</option>
+                  <option value="Almanya">Almanya</option>
+                  <option value="Fransa">Fransa</option>
+                  <option value="Rusya">Rusya</option>
+                </select><br>
+                <br><strong>ŞEHİR :</strong><br><br>
+                <select name="Şehirler" >
+                  <option value="Kocaeli" selected>Kocaeli</option><br>
+                  <option value="Çanakkale">Çanakkale</option><br>
+                  <option value="İstanbul">İstanbul</option><br>
+                  <option value="Ankara" >Ankara</option><br>
+                  <option value="Bursa">Bursa</option><br>
+                  <option value="Eskişehir">Eskişehir</option><br>
+                  <option value="İzmir">İzmir</option><br>
+                  <option value="Sakarya">Sakarya</option><br>
+                  <option value="Antalya">Antalya</option><br>
+                  <option value="Adana">Adana</option>
+                </select><br><br>
+               ADRESİNİZ:<br>
+                <br><textarea rows="5" cols="30"></textarea><br><br>
+                <br><br>
+            </fieldset>
+          </div>
+
+         <div class="gonder">
+            <input type="submit" value="Gönder">
+            <input type="reset" value="SIFIRLA">
+          </div>
+        </form>
+
+  </body>
+
+
+  </html>
