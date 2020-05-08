@@ -1,0 +1,41 @@
+table a{
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+table{
+    border:10px solid grey;
+    background-color: lightseagreen;
+    font-size: 30px;
+    padding: 20px;
+    color: whitesmoke;
+    float: left;
+}
+
+ table a:hover{
+   color: indigo;
+}
+body{
+    background-color: gray;
+}
+div{
+   float: left;
+}
+h3{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.oz{
+    width: 810px;
+    height: 430px;
+    margin-top: 102px;
+    color: whitesmoke;
+    background-color:lightseagreen;
+    font-size: 30px;
+    text-align: center;
+}
+.icerik{
+    margin-top: 70px;
+}
