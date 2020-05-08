@@ -1,0 +1,62 @@
+h2{
+    text-align: center;
+    font-size: 50px;
+   
+}
+h3{
+    font-size: 60px;
+}
+
+.sehir{
+    display: flex;
+    padding: 15px;
+    background-color:black;
+   justify-content: space-around;
+}
+.icerik{
+    padding:20px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.icerik:hover{
+    background-color:plum;
+}
+button{
+    background-color:black;
+    color: plum;
+    font-size: 25px;
+}
+img{
+    width: 500px;
+    height: 300px;
+    padding: 15px;
+    background-color: plum;
+    
+}
+.Slider{
+    background-color:black;
+    padding: 30px;
+    
+    
+}
+#onceki{
+    margin-left: 330px;
+}
+#video{
+ 
+    padding: 15px;
+    background-color: plum;
+    margin-left: 430px;
+}
+.video{
+    background-color: black;
+}
+
+p{
+    font-size: 50px;
+    background-color: grey;
+    padding: 30px;
+}
