@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Şehrim</title>
+    <link rel="stylesheet" href="sehrim.css">
+
+</head>
+
+<body>
+    <h2>KOCAELİ</h2>
+    <div class="sehir">
+        <div class="icerik"><a href="http://koto.org.tr/kocaeli-nin-tarihi-cd-5c534709154c5">Tarihçe</a></div>
+        <div class="icerik"><a href="http://koto.org.tr/kocaeli-ulasimi-cd-5c534709169de">Ulaşım</a></div>
+        <div class="icerik"><a href="http://koto.org.tr/kocaeli-nin-ekonomik-yapisi-cd-5c53470916f47">EKONOMİ</a></div>
+    </div>
+    <div class="video">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/IY9fbQtbWjE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="Slider">
+
+        <button id="onceki" onclick="oncekiFotoyuGetir()">Önceki</button>
+        <a id="ad" href="#p">
+            <img id="slider" src="resimler/ormanya.jpg"></a>
+        <button onclick="sonrakiFotoyuGetir()">Sonraki</button>
+
+
+        <script>
+            var resimler = [
+                "resimler/ormanya.jpg",
+                "resimler/sekapark.jpg",
+                "resimler/kartepe.jpg",
+                "resimler/fuar.jpg",
+                "resimler/kefkenn.jpg"
+
+            ];
+            var mevcutResimIndex = 0;
+            var index = 0;
+            var adlar = [
+                "#div1",
+                "#div2",
+                "#div3",
+                "#div4",
+                "#div5"
+
+            ];
+            function oncekiFotoyuGetir() {
+                var slider = document.getElementById("slider");
+                var link = document.getElementById("ad");
+                mevcutResimIndex--;
+                index--;
+                if (mevcutResimIndex < 0 && index < 0) {
+                    mevcutResimIndex = resimler.length - 1;
+                    index = adlar.length - 1;
+
+                }
+                slider.src = resimler[mevcutResimIndex];
+                ad.href = adlar[index];
+
+            }
+            function sonrakiFotoyuGetir() {
+                var slider = document.getElementById("slider");
+                var link = document.getElementById("ad");
+                mevcutResimIndex++;
+                index++;
+                if (mevcutResimIndex >= resimler.length && index >= adlar.length) {
+                    mevcutResimIndex = 0;
+                    index = 0;
+                }
+                slider.src = resimler[mevcutResimIndex];
+                ad.href = adlar[index];
+
+            }
+        </script>
+    </div>
+    <div id="div1">
+        <h3>ORMANYA</h3>
+        <p>Kocaeli ve Sakarya’ya neredeyse eşit uzaklıkta bulunan park gerçekten doğa ile iç içe vakit geçirmek
+            isteyenler için biçilmiş kaftan. Çocuk hayvanat bahçesinde bulunan hayvanlar çocuklardan çok yetişkinlerin
+            ilgisini çekiyor, büyük ve küçük baş hayvanların yanısıra kuş çeşitleri ve bir çok sürüngenin bulunduğu
+            bölümlerde var.
+
+            Ayrıca hayvanat bahçesi dışında parkın çeşitli noktalarında restaurant ve kafeterya bulunuyor.</p>
+    </div>
+    <div id="div2">
+        <h3>SEKAPARK</h3>
+        <p>İzmit ilçesinde bulunan Seka Park adını daha öncesinde kağıt fabrikası olan SEKA’dan almıştır. 580 dönüm
+            arazi üzerine kurulu olan Seka Park’ta tüm yaşlara hitap eden aktiviteler ve eğlence alanları mevcuttur.
+            İzmit körfezi sahil kenarında bulunan Parkta bir çok cafe ve restorant bulunur. Ayrıca yaz aylarında bir çok
+            etklinlik ile Kocaeli’de yaşayan insanların en uğrak noktası haline gelmektedir.</p>
+    </div>
+    <div id="div3">
+        <h3>KARTEPE</h3>
+        <p>Denizden 1600 metre yüksekte harika bir körfez manzarası bulunan Kartepe Kayak Merkezinde kış aylarının yanı
+            sıra yaz aylarında da doğa yürüyüşü , piknik alanları ve çevresinde bulunan bir çok etkinlik imkanı ve
+            restoran işletmeleriyle tercih edilme sebebidir. </p>
+    </div>
+    <div id="div4">
+        <h3>FUAR</h3>
+        <p>Kocaeli ili içerisinde yaz aylarında büyük bir ziyaretçi kitlesine sahip olan ve çeşitli etkinliklerin ve
+            konserlerin bulunduğu Kocaeli Fuarı her yıl bahar aylarından başlayarak sonbahara kadar devam eden bir
+            eğlence ve kültürel fuar alanı olarak biliniyor.
+
+            Özellikle çocukların büyük ilgi gösterdiği Lunapark’ı, yapay gölü, restoran ve cafeleri, düğün salonları,
+            eğlence mekanları ile yaz aylarında şehir merkezinin hemen yanında olması nedeniyle büyük ilgi görüyor.</p>
+    </div>
+    <div id="div5">
+        <h3>KEFKEN-PEMBE KAYALAR</h3>
+        <p>Pembe Kayalar, ilginç jeolojik yapısı nedeniyle görülmesi gereken yerlerdendir. Suyun içinde yumuşak olan
+            kayalar çıkarıldıktan sonra sertleşmektedir. Bu özelliklerinden dolayı Osmanlı döneminde insan gücüyle
+            dikdörtgen olarak kesilerek deniz yoluyla İstanbul’a getirilmiş, Sultanahmet Camii dahil birçok caminin
+            yapımında kullanılmıştır.Yazın insanlar buraya gelip denizin tadını çıkartıyorlar.</p>
+    </div>
+</body>
+
+</html>
